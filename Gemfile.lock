@@ -93,6 +93,8 @@ GEM
       unf (>= 0.0.5, < 1.0.0)
     erubi (1.7.1)
     execjs (2.7.0)
+    faker (1.8.7)
+      i18n (>= 0.7)
     ffi (1.9.25)
     figaro (1.1.1)
       thor (~> 0.14)
@@ -132,6 +134,8 @@ GEM
     pg (1.0.0)
     public_suffix (3.0.2)
     puma (3.11.4)
+    pundit (1.1.0)
+      activesupport (>= 3.0.0)
     rack (2.0.5)
     rack-proxy (0.6.4)
       rack
@@ -243,11 +247,13 @@ DEPENDENCIES
   chromedriver-helper
   cloudinary
   devise
+  faker
   figaro
   geocoder
   listen (>= 3.0.5, < 3.2)
   pg (>= 0.18, < 2.0)
   puma (~> 3.11)
+  pundit
   rails (~> 5.2.0)
   sass-rails (~> 5.0)
   selenium-webdriver
