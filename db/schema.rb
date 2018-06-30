@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 2018_06_30_012555) do
     t.string "name"
     t.string "model"
     t.string "brand"
-    t.string "car_photo"
+    t.string "photo"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["user_id"], name: "index_cars_on_user_id"
