@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2018_06_30_012555) do
     t.string "address"
     t.float "latitude"
     t.float "longitude"
-    t.integer "status"
+    t.integer "status", default: 0
     t.datetime "date"
     t.string "after_photo"
     t.datetime "created_at", null: false
