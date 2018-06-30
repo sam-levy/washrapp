@@ -16,6 +16,7 @@ gem "geocoder"
 gem 'figaro'
 gem 'cloudinary'
 gem 'carrierwave', '~> 1.2'
+gem 'pundit'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
