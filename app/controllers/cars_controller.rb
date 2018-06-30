@@ -1,6 +1,7 @@
 class CarsController < ApplicationController
 
   def index
+    @cars = policy_scope(Car).order(created_at: :desc)
   end
 
   def show
@@ -16,15 +17,18 @@ class CarsController < ApplicationController
   end
 
   def update
+    authorize @car
   end
 
   def destroy
+    authorize @car
   end
 
   private
 
   def set_car
     @car = Car.find(params[:id])
+    authorize @car
   end
 
   def car_params
