@@ -1,4 +1,5 @@
 class CarsController < ApplicationController
+  before_action :set_car, only: [:show, :edit, :update, :destroy]
 
   def index
     @cars = policy_scope(Car).order(created_at: :desc)
@@ -17,11 +18,9 @@ class CarsController < ApplicationController
   end
 
   def update
-    authorize @car
   end
 
   def destroy
-    authorize @car
   end
 
   private
